@@ -1,0 +1,150 @@
+body{
+    overflow: hidden;
+}
+nav{
+    background: gray;
+}
+.shoe{
+    width: 100%;
+    height: 100vh;
+    background: whitesmoke;
+}
+#active::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: .7vh;
+    left: 0;
+    bottom: -8px;
+    transform: scale(1);
+    transition: all .4s ease-out;
+    transform-origin:right ;
+    background: rgba(0, 0, 0, 0.7);;
+}
+#active{
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+}
+.shoe-con{
+    width: 100%;
+    min-height: 83%;
+}
+@keyframes move {
+    0%{
+        transform: translateY(5%);
+    }
+}
+.shoe1{
+    width: 22%;
+    min-height: 35vh;
+    position: relative;
+    left: 5%;
+    margin-top: 3%; 
+    animation: move 1.2s linear infinite alternate;
+}
+.shoe1 img, .shoe2 img, .shoe3 img,.shoe4 img,.shoe5 img ,.shoe6 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 3px 3px 2px,-3px -3px 2px;
+}
+.overlay1,.overlay2,.overlay3,.overlay4,.overlay5,.overlay6{
+    width: 100%;
+    height: 0%;
+    background: rgba(128, 128, 128, 0.8);
+    position: absolute;
+    transition: .8s ease-out;
+    bottom: 100%;
+    overflow: hidden;
+}
+.overlay1 h2, .overlay2 h2, .overlay3 h2 , .overlay4 h2, .overlay5 h2,.overlay6 h2{
+    position: absolute;
+    color: black;
+    width: 100%;
+    text-align: center;
+    top: 5%;
+}
+.overlay1 h3, .overlay2 h3, .overlay3 h3,.overlay4 h3,.overlay5 h3,.overlay6 h3{
+    position: absolute;
+    top: 25%;
+    left: 3%;
+}
+.overlay1 p,.overlay2 p ,.overlay3 p,.overlay4 p,.overlay5 p,.overlay6 p{
+    position: absolute;
+    font-weight: 600;
+    top: 35%;
+    width: 90%;
+    left: 5%;
+    text-align: justify;
+}
+.shoe1:hover .overlay1 , .shoe2:hover .overlay2 ,.shoe3:hover .overlay3 ,.shoe4:hover .overlay4,.shoe5:hover .overlay5,.shoe6:hover .overlay6{
+    height: 100%;
+    bottom: 0;
+}
+.shoe1:hover, .shoe2:hover , .shoe3:hover, .shoe4:hover,.shoe5:hover,.shoe6:hover{
+    animation: stop;
+}
+@keyframes stop{
+   0%{
+    transform: translateY(0);
+   }   
+}
+.overlay1 button ,.overlay2 button,.overlay3 button,.overlay4 button,.overlay5 button,.overlay6 button{
+    position: absolute;
+    top:84%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 600;
+    border: none;
+    padding: .6rem;
+    transition: .4s ease-out;
+    box-shadow: 2px 2px;
+    cursor: pointer;
+}
+.overlay1 button:hover,.overlay2 button:hover, .overlay3 button:hover,.overlay4 button:hover,.overlay5 button:hover,.overlay6 button:hover{
+    transform: scale(1.1)
+    translate(-50%,-50%);
+    box-shadow: 4px 4px ;
+}
+.shoe2{
+    width: 22%;
+    min-height: 33vh;
+    position: relative;
+    left: 5%;
+    margin-top: 3%; 
+    animation: move 1.2s linear infinite alternate;
+}
+.shoe3{
+    width: 22%;
+    min-height: 35vh;
+    position: relative;
+    left: 40%;
+    margin-top:-36.6%; 
+    animation: move 1.2s linear infinite alternate;
+}
+.shoe4{
+    width: 22%;
+    min-height: 33vh;
+    position: relative;
+    left: 40%;
+    margin-top:3%; 
+    animation: move 1.2s linear infinite alternate;
+}
+.shoe5{
+    width: 22%;
+    min-height: 35vh;
+    position: relative;
+    left: 73%;
+    margin-top:-36.6%; 
+    animation: move 1.2s linear infinite alternate;
+}
+.shoe6{
+    width: 22%;
+    min-height: 33vh;
+    position: relative;
+    left: 40%;
+    margin-top:3%; 
+    animation: move 1.2s linear infinite alternate;
+    left: 73%;
+}
+

@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    background-size:300%;
+    background-position: left;
+    animation: animate_1 10s linear infinite alternate ;
+}
+@keyframes animate_1{
+    0%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
+}
+.nav{
+    width: 100%;
+    height: 17vh;
+    position: relative;
+}
+.nav img{
+    margin-left:.7%;
+    width: 23%;
+    float: left;
+    position: absolute;
+    top: -30%;
+    left: -4%;
+
+}
+.nav ul{
+    float: right;
+    margin: 3%;
+    margin-top: 2.5%;
+}
+.nav ul li{
+    display: inline-block;
+    padding: 1.7rem;
+}
+.nav ul li a{
+    text-decoration:none;
+    color: white;
+    font-size: 1.3rem;
+    display: inline-block;
+    position: relative;
+    transition: .4s ease-out;
+}
+.nav ul li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: .7vh;
+    left: 0;
+    bottom: -8px;
+    transform: scale(0);
+    transition: all .4s ease-out;
+    transform-origin:right ;
+    background: rgba(0, 0, 0, 0.6);
+}
+.nav ul li a:hover{
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+}
+.nav ul li a:hover::after{
+    transform: scale(1);
+}
+.hero-con{
+    position: relative;
+    width: 70%;
+    margin: auto;
+    min-height: 60%;
+    top: 10%;
+}
+.hero-con h1{
+    position: absolute;
+    font-size: 3.5rem;
+    width: 100%;
+    text-align: center;
+    color: lime;
+    text-shadow: 2px 2px 7px ;
+}
+.hero-con img{
+    position: absolute;
+    width:60%;
+    height: 70%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.hero-con h3{
+    position: absolute;
+    font-size: 3.5rem;
+    width: 100%;
+    text-align: center;
+    color: lime;
+    text-shadow: 2px 2px 7px ;
+    top: 70%;
+}
+.hero-con h2{
+    position: absolute;
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 2px 7px ;
+    top: 87%;
+    letter-spacing: 6px;
+    color: limegreen;
+}
+.about{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.about-con{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.about-con h2{
+    position: absolute;
+    color: whitesmoke;
+    font-size: 3rem;
+    top: 6%;
+    left: 2%;
+}
+.about-con p{
+    position: absolute;
+    color: gray;
+    width: 65%;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    top: 20%;
+    left: 20%;
+    line-height: 40px;
+}
+.about-con img{
+    position: absolute;
+    top: -7%;
+    width: 40%;
+    left: 60%;
+}
+
+
+
+
+
+
+
+
+
+
